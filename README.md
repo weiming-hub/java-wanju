@@ -50,6 +50,10 @@ https://github.com/dsadsadsss/python-wanju.git
 
 https://github.com/dsadsadsss/python-wanju2.git
 
+#### JAVA插件版:
+
+https://github.com/dsadsadsss/Java-wanju-plugins.git
+
 #### 脚本配套哪吒面板v1,可以实现自动甚至哪吒面板中名称为脚本中的SUB_NAME值
 
 https://github.com/dsadsadsss/Docker-for-Nezha-Argo-server-v1.x.git
