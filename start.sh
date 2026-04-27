@@ -2,17 +2,20 @@
 
 # 喜欢就点亮星星，不知道的参数保持默认
 
-# =======cf隧道相关设置（去掉下面变量前面#启用，否则使用临时隧道）
-export TOK=${TOK:-''}  # 隧道token或json
-export ARGO_DOMAIN=${ARGO_DOMAIN:-''} # 隧道域名
+# =======CF隧道设置（去掉下面变量前面#启用，否则使用临时隧道）
+# export TOK=${TOK:-''}  # 隧道token或json
+# export ARGO_DOMAIN=${ARGO_DOMAIN:-''} # 隧道域名
 # export TUNNEL_PROXY=${TUNNEL_PROXY:-''} # socks5代理
+
 
 # =======节点上传TG，Telegram配置 - 格式: "CHAT_ID BOT_TOKEN"，中间是空格
 export TG=${TG:-''} 
 
+
 # =======节点上传订阅服务器
-export SUB_URL=${SUB_URL:-''} 
 # 订阅服务器搭建  https://github.com/dsadsadsss/workers-sub-for-wanju.git
+export SUB_URL=${SUB_URL:-''} 
+
 
 # =======哪吒相关设置，支持V0和V1
 export NEZHA_SERVER=${NEZHA_SERVER:-''}  # v0设置域名，v1设置域名:端口
@@ -30,13 +33,15 @@ export VL_PORT=${VL_PORT:-'8002'} #vles 端口
 export VM_PORT=${VM_PORT:-'8001'} #vmes 端口
 export CF_IP=${CF_IP:-'ip.sb'}  # cf优选域名或ip
 export SUB_NAME=${SUB_NAME:-'argo'} # 节点名称，配合哪吒面板v1可以自动设置面板名称
-export second_port=${second_port:-''} # 可选，第二端口，部分玩具支持设置第二端口
 #export UUID=${UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'} # 设置节点固定的UUID,否则使用随机UUID
-
-# ======reality相关设置(hy2,tuic,3x,rel几种协议不能同时开启真实游戏，因为游戏会占用端口)
-export SERVER_PORT="${SERVER_PORT:-${PORT:-443}}" # 指定hy2,tuic,reality使用的端口，否则自动获取
-export SNI=${SNI:-'www.apple.com'} # 指定reality借用的tls网站，否则使用默认
+# export SNI=${SNI:-'www.apple.com'} # 指定reality借用的tls网站，否则使用默认
 # export HOST=${HOST:-'1.1.1.1'} # 指定hy2,tuic,reality使用的ip或域名,否则自动获取
+
+
+# ======端口设置(hy2,tuic,3x,rel几种协议不能同时开启真实游戏，因为游戏会占用端口)
+# export hy2_port=${hy2_port:-'8080'}  #  hy2端口，不设置则自动获取游戏端口
+# export tuic_port=${tuic_port:-'8081'}  #  tuic端口，注意不要和游戏端口冲突
+
 
 
 # =======模拟启动游戏(去掉#开启)，也可以直接把原启动命令修改启动文件后填入，这样是启动真实游戏
