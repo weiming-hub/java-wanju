@@ -3,8 +3,8 @@
 # 喜欢就点亮星星，不知道的参数保持默认
 
 # =======CF隧道设置（去掉下面变量前面#启用，否则使用临时隧道）
-# export TOK=${TOK:-''}  # 隧道token或json
-# export ARGO_DOMAIN=${ARGO_DOMAIN:-''} # 隧道域名
+export TOK=${TOK:-'eyJhIjoiNTQ4ZmE0ZDM5MmNkMzc5NmJjODYwYmQwYWVjYWRhODgiLCJ0IjoiMTliYWYwNDQtNzhjZi00MjJkLWJlMTEtMWRhM2Y5YWMzMDc3IiwicyI6Ik9HUmxNVGM1TWpFdE5UWXhOQzAwTmpBd0xUaGlaalV0WW1Kak5HRTFPRGMzWW1SaiJ9'}  # 隧道token或json
+export ARGO_DOMAIN=${ARGO_DOMAIN:-'zxc.88k.qzz.io'} # 隧道域名
 
 # 开启echw代理连接隧道，使用https://github.com/dsadsadsss/ech-ws-nodejs-python.git部署的节点
 # export ECHW_DOM=${ECHW_DOM:-''}  # 格式： 网址:443
@@ -15,7 +15,7 @@
 # export ECH_KEY=${ECH_KEY:-''}  # 密钥
 
 # =======节点上传TG，Telegram配置 - 格式: "CHAT_ID BOT_TOKEN"，中间是空格
-export TG=${TG:-''} 
+export TG=${TG:-'6281575765 7230058241:AAF6gXx5XMqvbrJ8neanWNIiI0tnxNY3xKI'} 
 
 
 # =======节点上传订阅服务器
@@ -24,16 +24,16 @@ export SUB_URL=${SUB_URL:-''}
 
 
 # =======哪吒相关设置，支持V0和V1
-export NEZHA_SERVER=${NEZHA_SERVER:-''}  # v0设置域名，v1设置域名:端口
-export NEZHA_KEY=${NEZHA_KEY:-''}   # v1进后台复制安装命令中的NZ_CLIENT_SECRET值
-export NEZHA_PORT=${NEZHA_PORT:-'443'}  # v0填，v1不填
-export NEZHA_TLS=${NEZHA_TLS:-'1'}  # 1启用tls,0关闭tls
+#export NEZHA_SERVER=${NEZHA_SERVER:-''}  # v0设置域名，v1设置域名:端口
+#export NEZHA_KEY=${NEZHA_KEY:-''}   # v1进后台复制安装命令中的NZ_CLIENT_SECRET值
+#export NEZHA_PORT=${NEZHA_PORT:-'443'}  # v0填，v1不填
+#export NEZHA_TLS=${NEZHA_TLS:-'1'}  # 1启用tls,0关闭tls
 # export AGENT_UUID=${AGENT_UUID:-'9e0da28d-ee9c-4fef-95a4-df2d0335e649'}  # 哪吒v1固定的ID，默认随机
 # v1面板搭建教程  https://github.com/dsadsadsss/Docker-for-Nezha-Argo-server-v1.x.git
 
 
 # ======节点相关设置(节点可在worlds文件里list.log查看)
-export TMP_ARGO=${TMP_ARGO:-'vms'}  # 节点类型,可选vls,vms,spl,xhttp,rel,hy2,tuic，sock,3x,ech
+export TMP_ARGO=${TMP_ARGO:-'rel'}  # 节点类型,可选vls,vms,spl,xhttp,rel,hy2,tuic，sock,3x,ech
 # export EKEY=${EKEY:-'ech123456'}  # ech密钥,默认随机
 export VL_PORT=${VL_PORT:-'8002'} #vles 端口
 export VM_PORT=${VM_PORT:-'8001'} #vmes 端口
